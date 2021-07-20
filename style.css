@@ -1,0 +1,266 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Cormorant', serif;
+}
+
+#navbar {
+    position: fixed;
+    display: flex;
+    height: 5rem;
+    background-color: rgb(40, 40, 40);
+    border-bottom: 2px solid rgb(255, 40, 75);
+    width: 100%;
+    justify-content: center;
+}
+
+@media (max-width: 660px) {
+    #lg-media-nav-list {
+        display: none;
+    }
+    #sm-media-nav-list {
+        display: inline;
+    }
+    h1#greeting {
+        font-size: 2rem;
+    }
+    .container {
+        width: 25rem;
+    }
+    #contact-form {
+        width: 75%;
+    }
+}
+@media (min-width: 660px) {
+    #lg-media-nav-list {
+        display: inline;
+    }
+    #sm-media-nav-list {
+        display: none;
+    }
+    .container {
+        width: 30rem;
+    }
+    #contact-form {
+        width: 50%;
+    }
+}
+
+.nav-list {
+    margin: auto;
+}
+
+li {
+    list-style: none;
+    padding: 2.5rem;
+    display: inline;
+}
+
+#navbar .nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+#intro {
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(40, 40, 40);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+#intro div {
+    text-align: center;
+}
+
+.accent {
+    color: rgb(255, 40, 75);
+}
+
+.container {
+    max-width: 30rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 2.5rem auto;
+}
+
+#mission-statement .container {
+    background-color: white;
+    margin-bottom: 3.5rem;
+    }
+
+#greeting {
+    font-size: 2.5rem;
+}
+
+#intro-btn {
+    height: 2rem;
+    width: 10rem;
+    background-color: white;
+    color: rgb(40, 40, 40);
+    text-decoration: none;
+    text-align: center;
+    margin: 1rem;
+    line-height: 2rem;
+    font-weight: 600;
+    transition: all .35s ease;
+}
+
+#intro-btn:hover {
+    background-color: rgb(255, 40, 75);
+    color: white;
+    box-shadow: 1px 1px rgb(255, 40, 75),
+                2px 2px rgb(40, 40, 40),
+                3px 3px rgb(40, 40, 40);
+    -webkit-transform: translateY(-2px);
+    transform: translateY(-2px);
+}
+
+#mission-statement h2 {
+    font-size: 2rem;
+}
+
+#mission-statement hr {
+    margin: .5rem;
+    width: 15rem;
+}
+
+#headshot {
+    height: 20rem;
+    width: 20rem;
+    border-radius: 5px;
+    margin: 1rem 0;
+}
+
+p {
+    font-size: 1.25rem;
+}
+
+#projects {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.card {
+    height: 20rem;
+    width: 25rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.card-image {
+    max-width: 100%;
+    height: 14rem;
+}
+
+.card-links {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.description {
+    margin: auto;
+}
+
+.card-links a {
+    text-decoration: none;
+}
+
+#contact-form {
+    color: white;
+    background-color: rgb(40, 40, 40);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto 4rem auto;
+    padding-top: 1.5rem;
+    
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin:0 auto 2rem auto;
+    border-radius: 5px;
+    border: none;
+}
+
+input {
+    height: 2rem;
+    border-radius: 5px;
+}
+
+textarea {
+    min-height: 6rem;
+    width: 100%;
+    resize: vertical;
+    border-radius: 5px;
+}
+
+#footer {
+    height: 5rem;
+    width: 100%;
+    background-color: rgb(40, 40, 40);
+    display: flex;
+    justify-content: center;
+}
+
+#footer a {
+    text-decoration: none;
+}
+
+#footer i {
+    font-size: 2rem;
+    color: white;
+    transition: all .2s ease;
+}
+
+i.fas.fa-envelope::before {
+    color: rgb(255, 40, 75);
+    transition: all .2s ease;
+}
+
+#footer i:hover {
+    box-shadow: 1px 1px rgb(40, 40, 40),
+    2px 2px rgb(40, 40, 40),
+    3px 3px rgb(40, 40, 40);
+-webkit-transform: translateY(-2px);
+transform: translateY(-2px);
+}
+
+#scroll-up-btn {
+    display: block;
+    position: fixed;
+    bottom: 100px;
+    color: rgb(255, 40, 75);
+    font-size: 2.5rem;
+    left: 50%;
+    margin-left: -1.25rem;
+    transition: .3s ease;
+    border-radius: 50%;
+}
+
+.slide-up {
+    transform: translateY(0);
+}
+
+.slide-down {
+    transform: translateY(350%);
+}
