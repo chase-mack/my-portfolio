@@ -22,7 +22,7 @@ html,body {
         display: none;
     }
     #sm-media-nav-list {
-        display: inline;
+        display: flex;
     }
     h1#greeting {
         font-size: 1.75rem;
@@ -42,7 +42,7 @@ html,body {
 }
 @media (min-width: 660px) {
     #lg-media-nav-list {
-        display: inline;
+        display: flex;
     }
     #sm-media-nav-list {
         display: none;
@@ -55,14 +55,16 @@ html,body {
     }
 }
 
-.nav-list {
-    margin: auto;
+#lg-media-nav-list, #sm-media-nav-list {
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 0;
 }
 
-li {
+#navbar li {
     list-style: none;
-    padding: 2.5rem;
-    display: inline;
+    display: inline-block;
+    margin: 0 2rem;
 }
 
 #navbar .nav-link {
