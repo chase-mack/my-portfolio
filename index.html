@@ -89,7 +89,7 @@
         <h2>Contact Me Here</h2>
     </div>
     <section>
-        <form action="" id="contact-form">
+        <form action="POST" data-netlify="true" id="contact-form">
             <div class="form-group">
                 <label for="name">Name:</label>
                 <input type="text" name="name" id="name-input" placeholder="Enter your name">
@@ -101,6 +101,9 @@
             <div class="form-group">
                 <label for="email-text">Message:</label>
                 <textarea name="email-text" id="email-text" placeholder="Write your message here"></textarea>
+            </div>
+            <div class="form-group">
+                <input name="submit" type="submit">
             </div>
         </form>
     </section>
