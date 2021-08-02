@@ -150,6 +150,10 @@ ul {
     font-size: 2rem;
 }
 
+#about-me-text {
+    margin: 0 2rem;
+}
+
 #mission-statement hr {
     margin: .5rem;
     width: 15rem;
