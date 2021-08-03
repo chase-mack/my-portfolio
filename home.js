@@ -1,5 +1,7 @@
 const fullPage = document.querySelector('#body');
 const scrollUpBtn = document.querySelector('#scroll-up-btn');
+const envelopeBtn = document.querySelector('#envelope-btn');
+const nameInput = document.querySelector('#name-input');
 
 document.addEventListener('DOMContentLoaded', function (e) {
     document.addEventListener('scroll', function (e) {
@@ -14,4 +16,9 @@ document.addEventListener('DOMContentLoaded', function (e) {
             scrollUpBtn.classList.remove('slide-up');
         }
     })
+})
+
+envelopeBtn.addEventListener('click', function (e) {
+    e.preventDefault();
+    nameInput.focus();
 })
