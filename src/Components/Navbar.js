@@ -10,4 +10,23 @@ const Navbar = styled.nav`
     justify-content: center;
 `;
 
-export { Navbar };
+const NavLink = styled.a`
+    text-decoration: none;
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+`;
+
+const NavList = styled.ul`
+    list-style: none;
+    display: flex;
+    padding-left: 0;
+    align-items: center;
+`;
+
+const NavListItem = styled.li`
+    display: inline-block;
+    margin: 0 2rem;
+`;
+
+export { Navbar, NavLink, NavList };
