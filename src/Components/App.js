@@ -1,21 +1,31 @@
 import React from 'react';
-import { Navbar, NavList } from './Navbar';
-import '../';
+import { Navbar, NavList, NavListItem, NavLink } from './Navbar';
 
 class App extends React.Component {
     render() {
         return (
             <Navbar>
                 <NavList id="lg-media-list">
-                    <li><a className="nav-link" href="#project-link">Projects</a></li>
-                    <li><a className="nav-link" href="#contact-form">Contact</a></li>
-                    <li><a className="nav-link" target="_blank"
-                            href="https://www.linkedin.com/in/chase-mack-098a16213/">LinkedIn</a></li>
-                    <li><a className="nav-link" target="_blank" href="https://github.com/chase-mack">GitHub</a></li>
+                    <NavListItem>
+                        <NavLink href="#project-link">Projects</NavLink>
+                    </NavListItem>
+                    <NavListItem>
+                        <NavLink href="#contact-form">Contact</NavLink>
+                    </NavListItem>
+                    <NavListItem>
+                        <NavLink target="_blank" href="https://www.linkedin.com/in/chase-mack-098a16213/">LinkedIn</NavLink>
+                    </NavListItem>
+                    <NavListItem>
+                        <NavLink target="_blank" href="https://github.com/chase-mack">GitHub</NavLink>
+                    </NavListItem>
                 </NavList>
                 <NavList id="sm-media-list">
-                    <li><a className="nav-link" href="#project-link">Projects</a></li>
-                    <li><a className="nav-link" href="#contact-form">Contact</a></li>
+                    <NavListItem>
+                        <NavLink href="#project-link">Projects</NavLink>
+                    </NavListItem>
+                    <NavListItem>
+                        <NavLink href="#contact-form">Contact</NavLink>
+                    </NavListItem>
                 </NavList>
             </Navbar>
         )

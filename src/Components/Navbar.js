@@ -25,8 +25,9 @@ const NavList = styled.ul`
 `;
 
 const NavListItem = styled.li`
+    list-style: none;
     display: inline-block;
     margin: 0 2rem;
 `;
 
-export { Navbar, NavLink, NavList };
+export { Navbar, NavLink, NavList, NavListItem };
