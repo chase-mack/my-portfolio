@@ -1,33 +1,21 @@
-import styled from 'styled-components';
+import React from 'react';
 
-const Navbar = styled.nav`
-    position: fixed;
-    display: flex;
-    height: 5rem;
-    background-color: rgb(40, 40, 40);
-    border-bottom: 2px solid rgb(255, 40, 75);
-    width: 100%;
-    justify-content: center;
-`;
+const navbarStyles = {
+    position: 'fixed',
+    display: 'flex',
+    height: '5rem',
+    backgroundColor: 'rgb(40, 40, 40)',
+    borderBottom: '2px solid rgb(255, 40, 75)',
+    width: '100%',
+    justifyContent: 'center'
+}
 
-const NavLink = styled.a`
-    text-decoration: none;
-    color: white;
-    text-decoration: none;
-    font-size: 1.5rem;
-`;
+class Navbar extends React.Component {
+    render() {
+        return {
 
-const NavList = styled.ul`
-    list-style: none;
-    display: flex;
-    padding-left: 0;
-    align-items: center;
-`;
+        }
+    }
+}
 
-const NavListItem = styled.li`
-    list-style: none;
-    display: inline-block;
-    margin: 0 2rem;
-`;
-
-export { Navbar, NavLink, NavList, NavListItem };
+export default Navbar;
