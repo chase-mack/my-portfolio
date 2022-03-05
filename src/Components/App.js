@@ -66,7 +66,10 @@ class App extends React.Component {
                 <Footer>
                     <NavList>
                         <ListItem>
-                            <NavLink></NavLink>
+                            <NavLink href="https://www.linkedin.com/in/chase-mack-098a16213/" target="_blank"><i class="fab fa-linkedin-in"></i></NavLink>
+                            <NavLink href="#" id="envelope-btn"><span style={{ color: 'rgb(255, 40, 75)' }}><i class="fas fa-envelope"></i></span></NavLink>
+                            <NavLink href="https://github.com/chase-mack" target="_blank"><i class="fab fa-github"></i></NavLink>
+                            <NavLink href="https://codepen.io/chase-mack" target="_blank"><i class="fab fa-codepen"></i></NavLink>
                         </ListItem>
                     </NavList>
                 </Footer>
