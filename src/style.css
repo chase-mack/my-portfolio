@@ -7,16 +7,6 @@ html,body {
     font-family: 'Cormorant', serif;
 }
 
-#navbar {
-    position: fixed;
-    display: flex;
-    height: 5rem;
-    background-color: rgb(40, 40, 40);
-    border-bottom: 2px solid rgb(255, 40, 75);
-    width: 100%;
-    justify-content: center;
-}
-
 @media (max-width: 660px) {
     #lg-media-list {
         display: none;
@@ -68,23 +58,11 @@ a {
     padding-left: 0;
 }
 
-#navbar li {
-    list-style: none;
-    display: inline-block;
-    margin: 0 2rem;
-}
-
 ul {
     list-style: none;
     display: flex;
     padding-left: 0;
     align-items: center;
-}
-
-#navbar .nav-link {
-    color: white;
-    text-decoration: none;
-    font-size: 1.5rem;
 }
 
 #intro {
