@@ -16,6 +16,13 @@ const GlobalStyle = createGlobalStyle`
             scrollbar-width: none;
         }
     }
+
+    #headshot {
+        height: 20rem;
+        width: 20rem;
+        border-radius: 5px;
+        margin: 1rem 0;
+    }
 `;
 
 export default GlobalStyle;

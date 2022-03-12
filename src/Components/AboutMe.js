@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components'
 import { Container } from './Styles/ContainerStyles';
+import chase from '../Assets/chase.jpg';
 
 const Description = styled.section`
     font-size: 1.25rem;
@@ -13,6 +14,7 @@ class AboutMe extends React.Component {
                 <Container smmedia>
                     <h2 style={{ fontSize: '2rem' }}>A Little About Me</h2>
                     <hr style={{ width: '20rem' }} />
+                    <img src={chase} alt="Chase" id="headshot"></img>
                     <p style={{ fontSize: '1.5rem' }}>
                         With my background in the energy industry, I have learned value lies in delivering
                         the highest quality product in the shortest amount of time possible. Those principles
