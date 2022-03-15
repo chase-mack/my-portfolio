@@ -1,5 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const FooterDiv = styled.div`
     height: 5rem;
@@ -40,10 +42,12 @@ class Footer extends React.Component {
             <FooterDiv>
                 <FooterUL>
                     <FooterLI>
-                        <FootLink href="https://www.linkedin.com/in/chase-mack-098a16213/" target="_blank"><i></i></FootLink>
-                        <FootLink href="#" id="envelope-btn"><span style={{ color: 'rgb(255, 40, 75)' }}><i></i></span></FootLink>
-                        <FootLink href="https://github.com/chase-mack" target="_blank"><i></i></FootLink>
-                        <FootLink href="https://codepen.io/chase-mack" target="_blank"><i></i></FootLink>
+                        <FootLink href="https://www.linkedin.com/in/chase-mack-098a16213/" target="_blank"></FootLink>
+                        <FootLink>
+                            <FontAwesomeIcon icon={faEnvelope} /> This doesn't work!!!!!!
+                        </FootLink>
+                        <FootLink href="https://github.com/chase-mack" target="_blank"></FootLink>
+                        <FootLink href="https://codepen.io/chase-mack" target="_blank"></FootLink>
                     </FooterLI>
                 </FooterUL>
             </FooterDiv>
