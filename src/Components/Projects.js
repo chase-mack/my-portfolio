@@ -63,7 +63,7 @@ class Projects extends React.Component {
                                 <Image src={textGame} />
                             </a>
                         </div>
-                        <div class="description">
+                        <div className="description">
                             <p>A text adventure game using HTML/CSS and Vanilla JS.</p>
                         </div>
                         <LinkContainer>
@@ -80,7 +80,7 @@ class Projects extends React.Component {
                                 <Image src={carpentry} />
                             </a>
                         </div>
-                        <div class="description">
+                        <div className="description">
                             <p>A mock site for a carpentry business using HTML/CSS and Vanilla JS.</p>
                         </div>
                         <LinkContainer>
