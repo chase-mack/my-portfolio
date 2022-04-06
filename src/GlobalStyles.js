@@ -35,6 +35,14 @@ const GlobalStyle = createGlobalStyle`
         -webkit-transform: translateY(-2px);
         transform: translateY(-2px);
     }
+
+    .slide-up {
+        transform: translateY(0);
+    }
+    
+    .slide-down {
+        transform: translateY(350%);
+    }
 `;
 
 export default GlobalStyle;
