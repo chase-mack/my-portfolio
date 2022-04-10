@@ -37,7 +37,7 @@ const GlobalStyle = createGlobalStyle`
     }
 
     .slide-up {
-        transform: translateY(0);
+        transform: translateY(14px);
     }
     
     .slide-down {
