@@ -3,18 +3,28 @@ import styled from 'styled-components'
 import { Container } from './Styles/ContainerStyles';
 import chase from '../Assets/chase.jpg';
 
-const Description = styled.section`
-    font-size: 1.25rem;
+const Heading = styled.h2`
+    fontSize: 2rem;
+    text-align: center;
 `;
 
-class AboutMe extends React.Component {
-    render() {
-        return (
-            <Description>
+const AboutSection = styled.div`
+    display: flex;
+    flex-direction: row;
+    padding: 4rem 0;
+    justify-content: space-between;
+`;
+
+const AboutMe = () => {
+    return (
+        <section style={{ fontSize: '1.25rem' }}>
+            <Heading>A Little About Me</Heading>
+            <hr style={{ width: '20rem' }} />
+            <AboutSection>
                 <Container smmedia>
-                    <h2 style={{ fontSize: '2rem' }}>A Little About Me</h2>
-                    <hr style={{ width: '20rem' }} />
                     <img src={chase} alt="Chase" id="headshot"></img>
+                </Container>
+                <Container style={{ maxWidth: '25rem' }}>
                     <p style={{ fontSize: '1.5rem' }}>
                         With my background in the energy industry, I have learned value lies in delivering
                         the highest quality product in the shortest amount of time possible. Those principles
@@ -24,9 +34,9 @@ class AboutMe extends React.Component {
                         time as a developer.
                     </p>
                 </Container>
-            </Description>
-        )
-    }
+            </AboutSection>
+        </section>
+    )
 }
 
 export { AboutMe }

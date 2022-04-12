@@ -8,7 +8,7 @@ const GlobalStyle = createGlobalStyle`
         padding: 0;
         scroll-behavior: smooth;
         font-family: 'Cormorant', serif;
-        @media (max-width: 660px) {
+        @media (max-width: 700px) {
             ::-webkit-scrollbar {
                 display: none;
             }
@@ -18,8 +18,8 @@ const GlobalStyle = createGlobalStyle`
     }
 
     #headshot {
-        height: 20rem;
-        width: 20rem;
+        height: 22rem;
+        width: 22rem;
         border-radius: 5px;
         margin: 1rem 0;
     }

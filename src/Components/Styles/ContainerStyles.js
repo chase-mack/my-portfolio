@@ -7,7 +7,7 @@ const Container = styled.div`
     text-align: center;
     margin: auto;
     max-width: 30rem;
-    @media (max-width: 660px) {
+    @media (max-width: 700px) {
         max-width: ${props => props.smmedia ? '25rem' : '30rem'};
     }
 `;
