@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Container } from './Styles/ContainerStyles';
 
 const Form = styled.form`
     color: white;
@@ -40,9 +39,7 @@ const TextArea = styled.textarea`
 const Contact = () => {
     return (
         <section>
-            <Container>
-                <h2>Contact Me Here</h2>
-            </Container>
+            <h2 style={{ textAlign: 'center' }}>Contact Me Here</h2>
             <Form smmedia>
                 <FormGroup>
                     <label htmlFor='name'>Name:</label>

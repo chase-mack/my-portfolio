@@ -7,22 +7,20 @@ import { AboutMe } from './Components/AboutMe';
 import { Projects } from './Components/Projects';
 import { Contact } from './Components/Contact';
 
-class App extends React.Component {
-    render() {
-        return (
-            <React.Fragment>
-                <GlobalStyle />
-                <Header />
-                <main>
-                    <Intro />
-                    <AboutMe />
-                    <Projects />
-                </main>
-                <Contact />
-                <Footer />
-            </React.Fragment>
-        )
-    }
+const App = () => {
+    return (
+        <React.Fragment>
+            <GlobalStyle />
+            <Header />
+            <main>
+                <Intro />
+                <AboutMe />
+                <Projects />
+            </main>
+            <Contact />
+            <Footer />
+        </React.Fragment>
+    )
 }
 
 export default App;

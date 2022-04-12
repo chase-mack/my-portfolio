@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Container } from './Styles/ContainerStyles';
 import textGame from '../Assets/text-game.png';
 import carpentry from '../Assets/carpentry.png';
 
@@ -10,10 +9,11 @@ const Grid = styled.section`
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin-bottom: 2rem;
+    padding: 4rem;
 `;
 
 const Card = styled.div`
-    width: 20rem;
+    width: 22rem;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -49,52 +49,56 @@ const CardLink = styled.div`
     margin-bottom: 1rem;
 `;
 
-class Projects extends React.Component {
-    render() {
-        return (
-            <React.Fragment>
-                <Container>
-                    <h2>Have a look at some of my projects.</h2>
-                </Container>
-                <Grid>
-                    <Card>
-                        <div>
-                            <a href="text-game/textGame.html" target="_blank">
-                                <Image src={textGame} />
-                            </a>
-                        </div>
-                        <div className="description">
-                            <p>A text adventure game using HTML/CSS and Vanilla JS.</p>
-                        </div>
-                        <LinkContainer>
-                            <CardLink href="text-game/textGame.html">Live</CardLink>
-                            <CardLink
-                                href="https://github.com/chase-mack/text-game/blob/5a45beaaba0e6d9e283b4f2f4881ca6befe71c92/textGame.js"
-                                target="_blank">Code
-                            </CardLink>
-                        </LinkContainer>
-                    </Card>
-                    <Card>
-                        <div>
-                            <a href="dad-site/index.html" target="_blank">
-                                <Image src={carpentry} />
-                            </a>
-                        </div>
-                        <div className="description">
-                            <p>A mock site for a carpentry business using HTML/CSS and Vanilla JS.</p>
-                        </div>
-                        <LinkContainer>
-                            <CardLink href="dad-site/index.html">Live</CardLink>
-                            <CardLink
-                                href="https://github.com/chase-mack/dad-site/blob/d42c4568a77085dcdf66ddc5372c40f1575c0b2e/dad-site.js"
-                                target="_blank">Code
-                            </CardLink>
-                        </LinkContainer>
-                    </Card>
-                </Grid>
-            </React.Fragment>
-        )
-    }
+const Text = styled.p`
+    padding: 0 2rem;
+    font-size: 1.3rem;
+    display: inline-block;
+    margin: 1rem;
+`;
+
+const Projects = () => {
+    return (
+        <React.Fragment>
+            <h2 style={{ textAlign: 'center', fontSize: '2rem' }}>Have a look at some of my projects.</h2>
+            <hr style={{ width: '50rem' }} />
+            <Grid>
+                <Card>
+                    <div>
+                        <a href="text-game/textGame.html" target="_blank">
+                            <Image src={textGame} />
+                        </a>
+                    </div>
+                    <div>
+                        <Text>A text adventure game using HTML/CSS and Vanilla JS.</Text>
+                    </div>
+                    <LinkContainer>
+                        <CardLink href="text-game/textGame.html">Live</CardLink>
+                        <CardLink
+                            href="https://github.com/chase-mack/text-game/blob/5a45beaaba0e6d9e283b4f2f4881ca6befe71c92/textGame.js"
+                            target="_blank">Code
+                        </CardLink>
+                    </LinkContainer>
+                </Card>
+                <Card>
+                    <div>
+                        <a href="dad-site/index.html" target="_blank">
+                            <Image src={carpentry} />
+                        </a>
+                    </div>
+                    <div>
+                        <Text>A mock carpentry site using HTML/CSS and Vanilla JS.</Text>
+                    </div>
+                    <LinkContainer>
+                        <CardLink href="dad-site/index.html">Live</CardLink>
+                        <CardLink
+                            href="https://github.com/chase-mack/dad-site/blob/d42c4568a77085dcdf66ddc5372c40f1575c0b2e/dad-site.js"
+                            target="_blank">Code
+                        </CardLink>
+                    </LinkContainer>
+                </Card>
+            </Grid>
+        </React.Fragment>
+    )
 }
 
 export { Projects };

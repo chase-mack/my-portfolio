@@ -55,35 +55,33 @@ const LogoContainer = styled.div`
     }
 `;
 
-class Header extends React.Component {
-    render() {
-        return (
-            <Navbar>
-                <LogoContainer>
-                    <NavLink href="#">
-                        <Logo src={logo} />
-                    </NavLink>
-                </LogoContainer>
-                <NavList>
-                    <ListItem lgmedia smmedia>
-                        <NavLink href="#project-link">Projects</NavLink>
-                    </ListItem>
-                    <ListItem lgmedia>
-                        <NavLink target="_blank" href="https://github.com/chase-mack">GitHub</NavLink>
-                    </ListItem>
-                    <ListItem smmedia>
-                        <NavLink href="#"><Logo src={logo} alt='logo' /></NavLink>
-                    </ListItem>
-                    <ListItem lgmedia>
-                        <NavLink target="_blank" href="https://www.linkedin.com/in/chase-mack-098a16213/">LinkedIn</NavLink>
-                    </ListItem>
-                    <ListItem lgmedia smmedia>
-                        <NavLink href="#contact-form">Contact</NavLink>
-                    </ListItem>
-                </NavList>
-            </Navbar>
-        )
-    }
+const Header = () => {
+    return (
+        <Navbar>
+            <LogoContainer>
+                <NavLink href="#">
+                    <Logo src={logo} />
+                </NavLink>
+            </LogoContainer>
+            <NavList>
+                <ListItem lgmedia smmedia>
+                    <NavLink href="#project-link">Projects</NavLink>
+                </ListItem>
+                <ListItem lgmedia>
+                    <NavLink target="_blank" href="https://github.com/chase-mack">GitHub</NavLink>
+                </ListItem>
+                <ListItem smmedia>
+                    <NavLink href="#"><Logo src={logo} alt='logo' /></NavLink>
+                </ListItem>
+                <ListItem lgmedia>
+                    <NavLink target="_blank" href="https://www.linkedin.com/in/chase-mack-098a16213/">LinkedIn</NavLink>
+                </ListItem>
+                <ListItem lgmedia smmedia>
+                    <NavLink href="#contact-form">Contact</NavLink>
+                </ListItem>
+            </NavList>
+        </Navbar>
+    )
 }
 
 export { Header };
