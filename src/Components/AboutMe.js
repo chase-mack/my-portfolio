@@ -16,6 +16,7 @@ const AboutSection = styled.div`
     @media (max-width: 875px) {
         flex-direction: column};
     }
+    font-weight: 600;
 `;
 
 const Container = styled.div`
@@ -33,12 +34,7 @@ const AboutMe = () => {
                 </Container>
                 <Container>
                     <p style={{ maxWidth: '22rem', display: 'inline-block' }}>
-                        I have learned value lies in delivering
-                        the highest quality product in the shortest amount of time possible. Those principles
-                        will translate but I knew I wanted that product to change while working on my first
-                        original project. Programming is challenging, frustrating, rewarding, and I love it.
-                        I am excited to see what I am able to build when I have the opportunity to work full
-                        time as a developer.
+                        With my background in the energy industry, I have learned value lies in delivering the highest quality product in the shortest amount of time possible. Those principles will translate but I knew I wanted that product to change while working on my first original project. Programming is challenging, frustrating, rewarding, and I love it. I am excited to see what I am able to build when I have the opportunity to work full time as a developer.
                     </p>
                 </Container>
             </AboutSection>
