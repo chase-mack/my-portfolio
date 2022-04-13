@@ -39,8 +39,8 @@ const TextArea = styled.textarea`
 const Contact = () => {
     return (
         <section>
-            <h2 style={{ textAlign: 'center' }}>Contact Me Here</h2>
-            <Form smmedia>
+            <h2 style={{ textAlign: 'center', fontSize: '2rem' }}>Contact Me Here</h2>
+            <Form action='POST' id='contact-form' method='post'>
                 <FormGroup>
                     <label htmlFor='name'>Name:</label>
                     <Input type="text" name="name" placeholder="Enter your name" />

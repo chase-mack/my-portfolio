@@ -43,6 +43,10 @@ const GlobalStyle = createGlobalStyle`
     .slide-down {
         transform: translateY(350%);
     }
+
+    label {
+        font-size: 1.5rem;
+    }
 `;
 
 export default GlobalStyle;

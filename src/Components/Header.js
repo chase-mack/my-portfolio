@@ -39,6 +39,9 @@ const NavLink = styled.a`
     color: white;
     text-decoration: none;
     font-size: 1.5rem;
+    &:hover {
+        color: rgb(255, 40, 75);
+    }
 `;
 
 const Logo = styled.img`
