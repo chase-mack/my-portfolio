@@ -47,6 +47,7 @@ const CardLink = styled.a`
     color: white;
     line-height: 2rem;
     margin-bottom: 1rem;
+    text-decoration: none;
 `;
 
 const Text = styled.p`
