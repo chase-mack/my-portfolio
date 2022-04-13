@@ -1,6 +1,6 @@
 [submodule "text-game"]
 	path = text-game
-	url = https://github.com/chase-mack/text-game
+	url = https://github.com/chase-mack/text-game.git
 [submodule "dad-site"]
 	path = dad-site
 	url = https://github.com/chase-mack/dad-site.git
