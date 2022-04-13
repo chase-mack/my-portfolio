@@ -37,7 +37,7 @@ const LinkContainer = styled.div`
     justify-content: space-evenly;
 `;
 
-const CardLink = styled.div`
+const CardLink = styled.a`
     display: inline-block;
     height: 2rem;
     width: 5rem;
