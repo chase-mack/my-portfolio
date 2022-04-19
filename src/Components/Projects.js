@@ -61,7 +61,7 @@ const Projects = () => {
     return (
         <React.Fragment>
             <h2 style={{ textAlign: 'center', fontSize: '2rem' }}>Have a look at some of my projects.</h2>
-            <hr style={{ width: '50rem' }} />
+            <hr style={{ width: '80%' }} />
             <Grid>
                 <Card>
                     <div>

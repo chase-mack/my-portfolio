@@ -27,7 +27,7 @@ const AboutMe = () => {
     return (
         <section style={{ fontSize: '1.5rem' }}>
             <Heading>A Little About Me</Heading>
-            <hr style={{ width: '50rem' }} />
+            <hr style={{ width: '80%' }} />
             <AboutSection>
                 <Container>
                     <img src={chase} alt="Chase" id="headshot"></img>

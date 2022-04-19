@@ -49,7 +49,7 @@ const Footer = () => {
     const [isScrolled, setScrolled] = useState(false);
 
     const handleScroll = () => {
-        setScrolled((window.innerHeight + window.scrollY) >= document.body.scrollHeight);
+        setScrolled((window.innerHeight + window.scrollY + 1) >= document.body.scrollHeight);
     }
 
     useEffect(() => {

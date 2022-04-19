@@ -9,9 +9,9 @@ const Form = styled.form`
     flex-direction: column;
     margin: 0 auto 4rem auto;
     padding-top: 1.5rem;
-    max-width: 50%;
+    max-width: 60%;
     @media (max-width: 660px) {
-        max-width: 75%
+        max-width: 80%
     }
 `;
 
