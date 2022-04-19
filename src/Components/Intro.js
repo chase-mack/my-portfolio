@@ -20,7 +20,9 @@ const Intro = () => {
     return (
         <IntroSection id="intro">
             <h1>
-                Hi, my name is
+                Welcome!
+                <br />
+                My name is
                 <span style={{ color: 'rgb(255, 40, 75)' }}> Chase Mack</span>
                 <br />
                 And I'm a Software Developer.
