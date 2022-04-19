@@ -18,10 +18,8 @@ const GlobalStyle = createGlobalStyle`
     }
 
     #headshot {
-        height: 22rem;
-        width: 22rem;
+        max-width: 22rem;
         border-radius: 5px;
-        margin: 1rem 0;
     }
 
     .hovered {

@@ -11,6 +11,9 @@ align-items: center;
 text-align: center;
 color: white;
 font-size: 1.5rem;
+@media (max-width: 660px) {
+    font-size: 1.25rem;
+}
 `;
 
 const Intro = () => {
