@@ -16,22 +16,20 @@ const Navbar = styled.nav`
 `;
 
 const NavList = styled.ul`
+    padding: 0;
     list-style: none;
-    padding-left: 0;
     align-items: center;
     display: flex;
 `;
 
 const ListItem = styled.li`
-    list-style: none;
-    display: inline-block;
-    margin: 0 2rem;
     @media (min-width: 700px) {
         display: ${props => props.lgmedia ? 'flex' : 'none'};
     }
     @media (max-width: 700px) {
         display: ${props => props.smmedia ? 'flex' : 'none'};
     }
+    margin: 0 1.5rem;
 `;
 
 const NavLink = styled.a`
