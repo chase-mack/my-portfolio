@@ -40,7 +40,7 @@ const Contact = () => {
     return (
         <section>
             <h2 style={{ textAlign: 'center', fontSize: '2rem' }}>Contact Me Here</h2>
-            <Form action='POST' id='contact-form' method='post' name='contact'>
+            <Form id='contact-form' method='post' name='contact'>
                 <input type="hidden" name="form-name" value="contact" />
                 <FormGroup>
                     <label htmlFor='name'>Name:</label>
@@ -51,8 +51,8 @@ const Contact = () => {
                     <Input type="email" name="email" placeholder="Enter your email" />
                 </FormGroup>
                 <FormGroup>
-                    <label htmlFor='email-text'>Message:</label>
-                    <TextArea name="email-text" id="email-text" placeholder="Write your message here" />
+                    <label htmlFor='message'>Message:</label>
+                    <TextArea name="message" id="email-text" placeholder="Write your message here" />
                 </FormGroup>
                 <FormGroup>
                     <Input type="submit" name="submit" />
