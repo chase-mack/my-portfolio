@@ -40,7 +40,8 @@ const Contact = () => {
     return (
         <section>
             <h2 style={{ textAlign: 'center', fontSize: '2rem' }}>Contact Me Here</h2>
-            <Form action='POST' id='contact-form' method='post'>
+            <Form action='POST' id='contact-form' method='post' name='contact'>
+                <input type="hidden" name="form-name" value="contact" />
                 <FormGroup>
                     <label htmlFor='name'>Name:</label>
                     <Input type="text" name="name" placeholder="Enter your name" />
