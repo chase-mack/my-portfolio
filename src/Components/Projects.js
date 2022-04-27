@@ -73,7 +73,7 @@ const Projects = () => {
                         <Text>A text adventure game using HTML/CSS and Vanilla JS.</Text>
                     </div>
                     <LinkContainer>
-                        <CardLink href="text-game/textGame.html">Live</CardLink>
+                        <CardLink target="_blank" href="text-game/textGame.html">Live</CardLink>
                         <CardLink
                             href="https://github.com/chase-mack/text-game/blob/5a45beaaba0e6d9e283b4f2f4881ca6befe71c92/textGame.js"
                             target="_blank">Code
@@ -90,7 +90,7 @@ const Projects = () => {
                         <Text>A mock carpentry site using HTML/CSS and Vanilla JS.</Text>
                     </div>
                     <LinkContainer>
-                        <CardLink href="dad-site/index.html">Live</CardLink>
+                        <CardLink target="_blank" href="dad-site/index.html">Live</CardLink>
                         <CardLink
                             href="https://github.com/chase-mack/dad-site/blob/d42c4568a77085dcdf66ddc5372c40f1575c0b2e/dad-site.js"
                             target="_blank">Code
